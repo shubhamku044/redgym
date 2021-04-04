@@ -50,7 +50,7 @@
 }
 .navlist li a{
     text-decoration: none;
-    color: white;
+    color: #111;
     font-size: 25px;
 }
 .navlist li a:hover{
