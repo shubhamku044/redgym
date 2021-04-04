@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/* ------------navbar------------- */
+
+.navbar{
+    display: flex;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: url('/images/background.jpg');
+    z-index: 1;
+    /* line-height: 20px; */
+}
+
+.logo{
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    color: lawngreen;
+    padding: 8px 35px;
+    align-items: center;
+    margin: auto;
+}
+.logo span{
+    color: red;
+}
+.navlist{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    /* width: 70%; */
+    
+}
+.navlist li{
+    list-style: none;
+    padding: 8px 35px ;
+    
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.navlist li a:hover{
+    text-decoration: none;
+    color: brown;
+    font-size: 25px;
+}
+.background{
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* max-width: 100%; */
+}
+
+/* ----------home section----------- */
+.home{
+    text-transform: uppercase;
+    color: white;
+    margin: 0 200px;
+    padding-top: 200px;
+}
+.smalltext{
+    font-weight: 600;
+    font-size: 27px;
+}
+.smalltext span{
+    background-color: rgba(255, 0, 0, 0.2);
+    margin-left: 57px;
+    border-left:5px solid red;
+
+}
+.slogan{
+    font-weight: 600;
+    font-size: 52px;
+}
+.slogan li{
+    list-style: none;
+    padding: 2px 50px;
+}
+.slogan li:nth-child(2){
+    color: red;
+}
+.slogan-res{
+    display: none;
+    position: absolute;
+}
+
+
+/* ------------about----------- */
+.about{
+    padding: 80px 15px;
+    background-color: #fff;
+}
+.about .container h1{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    /* border-bottom: 8px solid #c64756;
+    border-radius: 6px; */
+}
+.about .container h1:after{
+    content: '';
+    background: #c64756;
+    display: block;
+    height: 3px;
+    width: 110px;
+    margin: 1px auto;
+}
+.about .content{
+    display: flex;
+}
+.about .content .box{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+.about .content .box .inner{
+    background-color: #ffd384;
+    /* background: rgb(227,63,96);
+    background: linear-gradient(90deg, rgba(227,63,96,0.9472163865546218) 0%, rgba(35,129,60,0.835171568627451) 87%); */
+}
+.about .content .box .inner .text{
+    padding: 20px;
+}
+.about .content .box:nth-child(2) .inner{
+    background-color: #ffab73;
+}
+.about .content .box .inner .img img{
+    width: 100%;
+}
+.about .content .box .inner .text h4{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 15px;
+}
+.about .content .box .inner .text p{
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 400;
+    color: #1b2021;
+}
+
+
+/* ---------------services-------------- */
+
+.services{
+    padding: 80px auto;
+}
+.services .container{
+    /* position: relative; */
+    /* background-color: pink; */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.7483368347338936) 0%, rgba(253,187,45,0.7483368347338936) 100%);
+    /* margin-top: 100px; */
+    padding: 80px 15px;
+    background-size: cover;
+}
+.services h1{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+    font-weight:600;
+    font-size: 48px;
+}
+.services .container h1:after{
+    content: '';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 10px auto;
+}
+.services .content{
+    width: 90%;
+    margin: 10px auto;
+}
+.services .leftcontent{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.services .leftcontent h2{
+    padding-left: 10px;
+}
+.services .leftcontent p{
+    padding-left: 10px;
+}
+.services .container .content{
+    display: flex;
+}
+
+/* -----------------PRICING------------------ */
+
+
+.pricing{
+    margin: 100px auto;
+    padding: 80px auto;
+
+}
+.pricing .container h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.pricing .container h1:after{
+    content: '';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+.pricing .container p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+.price{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 0% 27% 0% 27% / 0% 27% 0% 27% ;
+    height: 250px;
+    width: 250px;
+}
+.price-head h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+.price-content p{
+    padding-top: 45px;
+}
+
+.row{
+    display: flex;
+    width: 98%;
+    margin: 20px auto;
+}
+.row .col{
+    margin: 10px auto;
+
+}
+.row .col:hover{
+    transition: 0.5s;
+
+}
+
+
+
+/* --------- contact -------- */
+
+
+footer{
+    width: 100%;
+    background-color: #111;
+    color: #d9d9d9;
+}
+footer .container{
+    padding:40px 30px ;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+}
+footer h1{
+    text-align: center;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+footer .container .box{
+    width: 50%;
+}
+footer .container .leftside .content{
+    display: flex;
+    padding: 0 50px;
+    justify-content: center;
+}
+footer .container .leftside .content li{
+    list-style: none;
+    padding:  5px 50px;
+}
+footer .container .leftside .content button{
+    text-align: center;
+    background: transparent;
+    padding: 5px 18px;
+    border: 2px solid #d9d9d9;
+}
+footer .container .leftside .content button:hover{
+    background: #d9d9d9;
+    /* padding: 6px 9px; */
+    border: 2px solid #111;
+    transition: 0.4s;
+    cursor: pointer;
+}
+footer .container .leftside .content button:hover a{
+    color: #111;
+}
+footer .container .leftside .content button a{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+.leftside .social{
+    display: flex;
+    justify-content: center;
+}
+.leftside .social a{
+
+    text-decoration: none;
+    color: #d9d9d9;
+    margin: 15px;
+    padding: 6px 10px;
+}
+.leftside .social a:hover{
+    background-color: #d9d9d9;
+    color: #111;
+}
+.rightside h2{
+    text-transform: uppercase;
+}
+footer .bottom{
+    font-size: 16px;
+    text-align: center;
+    border-top:2px solid #d9d9d9;
+    border-bottom:2px solid #d9d9d9;
+    background-color: #111;
+
+}
+footer .bottom a{
+    text-decoration: none;
+    color: red;
+}
+footer .bottom a:hover{
+    color: yellow;
+}
+
+
+
+
+
+
+/* -------------creating website responsive------------ */
