@@ -211,6 +211,9 @@
 .services .container .content{
     display: flex;
 }
+.services .container .content .box .inner .img img{
+    width: 100%;
+}
 
 /* -----------------PRICING------------------ */
 
