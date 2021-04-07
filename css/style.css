@@ -68,12 +68,14 @@
 
 /* ----------home section----------- */
 .home{
-    text-transform: uppercase;
     color: #eeebdd;
+    text-transform: uppercase;
+    
     margin: 0 200px;
     padding-top: 200px;
 }
 .smalltext{
+    color: #eeebdd;
     font-weight: 600;
     font-size: 27px;
 }
@@ -84,6 +86,7 @@
 
 }
 .slogan{
+    color: #eeebdd;
     font-weight: 600;
     font-size: 52px;
 }
