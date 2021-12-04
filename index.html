@@ -12,8 +12,44 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		
 		<title>Gym Website</title>
+		<style>
+	         body{
+				background-color: black;
+			 }
+
+			 .flex-container-1 {
+                 display: flex;
+                 flex-wrap: wrap;
+				 justify-content: center;
+				 }
+
+				/* Responsive layout - makes a one column-layout instead of two-column layout */
+                  @media (max-width: 800px) {
+                  .flex-container-1 {
+				   text-align: center;
+                   }
+				   .container-all {
+					   padding-bottom: 50px;
+
+				   }
+                      } 
+
+				.container-all {
+					padding-bottom: 50px; }	  
+
+				.para-feat {
+					color: white; 
+					padding-top: 30px; 
+					text-align: center;
+				} 
+				.img-para {
+					width: 80px; 
+					height: 80px; 
+					margin: 0 60px;
+				}
+			 
+		</style>
 	</head>
 	<body>
 		<!-- navbar  -->
@@ -21,7 +57,7 @@
 			<div class="logo"><span>Gym</span> Website</div>
 			<div class="toggle_menu" id="toggle"></div>
 			<ul class="navlist" id="navlist">
-				<li><a href="#home">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="Register.html">Register</a></li>
@@ -49,7 +85,135 @@
 			</section>
 		</div>
 
-		
+		<!--features-->
+		<h2 style="color: white; padding-top: 70px; text-align: center;">We can give you</h2>
+		<h2 style="color: red; text-align: center;">Much More Than Others</h2>
+
+		<div class="flex-container-1" style="margin: 50px;">
+			<div class="container-all"> <img src="icons/002-dumbbell-modified.png" alt="Dubbbel icon" class="img-para"> <br> <p class="para-feat">150 Gyms</p></div>
+			<div class="container-all"> <img src="icons/003-condo-modified.png" alt="Building icon" class="img-para"> <br> <p class="para-feat" >195 Cities</p> </div>
+			<div class="container-all"> <img src="icons/006-world-map-modified.png" alt="World icon" class="img-para"> <br> <p class="para-feat" >25 Countries</p> </div>  
+			<div class="container-all"> <img src="icons/005-training-modified.png" alt="Training icon" class="img-para"> <br> <p class="para-feat" >Personal Training<br>Program</p> </div>
+			<div class="container-all"> <img src="icons/corporate-modified.png" alt="Corporate icon" class="img-para"> <br> <p class="para-feat" >Corporate Wellness<br>Program</p> </div>
+			<div class="container-all"> <img src="icons/001-group-modified.png" alt="Group icon" class="img-para"> <br> <p class="para-feat" >Group Program</p> </div> 
+		  </div>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="content">
+					<div class="box">
+						<div class="inner">
+							<div class="img">
+								<img src="images/1.png" alt="trainer" />
+							</div>
+							<div class="text">
+								<h4>FREE TRIAL</h4>
+								<p>
+									Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Eligendi, modi
+									reprehenderit facilis autem quos inventore
+									nemo commodi aperiam numquam aliquid. Sint
+									aspernatur a nulla minima? Maxime aliquid
+									adipisci porro, expedita dolores deleniti in
+									perspiciatis. Eos nostrum placeat sunt esse.
+									Minima reiciendis ea saepe quos, porro
+									dolore iusto explicabo distinctio rerum!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="inner">
+							<div class="img">
+								<img
+									src="images/2.png"
+									alt="consultation"
+								/>
+							</div>
+							<div class="text">
+								<h4>START YOUR SESSIONS</h4>
+								<p>
+									Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Eligendi, modi
+									reprehenderit facilis autem quos inventore
+									nemo commodi aperiam numquam aliquid. Sint
+									aspernatur a nulla minima? Maxime aliquid
+									adipisci porro, expedita dolores deleniti in
+									perspiciatis. Eos nostrum placeat sunt esse.
+									Minima reiciendis ea saepe quos, porro
+									dolore iusto explicabo distinctio rerum!
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="inner">
+							<div class="img">
+								<img src="images/3.png" alt="equipments" />
+							</div>
+							<div class="text">
+								<h4>BUY A MEMBERSHIP</h4>
+								<p>
+									Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Eligendi, modi
+									reprehenderit facilis autem quos inventore
+									nemo commodi aperiam numquam aliquid. Sint
+									aspernatur a nulla minima? Maxime aliquid
+									adipisci porro, expedita dolores deleniti in
+									perspiciatis. Eos nostrum placeat sunt esse.
+									Minima reiciendis ea saepe quos, porro
+									dolore iusto explicabo distinctio rerum!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+<footer>
+    <div class="flex-container">
+
+      <!-- 1st room -->
+      <div >
+        <p style="padding-bottom: 20px;">
+          <span style= "color: red; font-weight: 700; font-size: 25px;">GYM</span> 
+          <span style= "font-weight: 700; font-size: 25px;">WEBSITE</span>
+        </p>
+
+        <ul>
+          <li><a href="index.html" class="linkbottom">HOME</a></li>
+          <li><a href="about.html" class="linkbottom">ABOUT US</a></li>
+          <li><a href="gallery" class="linkbottom">GALLERY</a></li>
+          <li><a href="Register.html" class="linkbottom">REGISTER</a></li>
+		  <li><a href="Login.html" class="linkbottom">LOGIN</a></li>
+          <li><a href="contact.html" class="linkbottom">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <!-- 2nd room -->
+      <div >
+        <p>
+          <h2 style="padding-bottom: 10px;">Contact us</h2>
+          <p>xyz<br>xyz</p>    
+        </p>
+      </div>
+
+      <!-- 3rd room -->
+      <div >
+        <p>
+         <h2 style="padding-bottom: 10px;">Follow us</h2>
+         <img src="icons/instagram-modified.png" alt="instagram" style="width: 50px; height: 50px;">
+         <img src="icons/twitter-modified.png" alt="twitter" style="width: 50px; height: 50px;">
+         <img src="icons/facebook-modified.png" alt="facebook" style="width: 50px; height: 50px;">
+        </p>
+
+      </div>  
+
+    </div>
+  </footer>
 
 		
 		<script

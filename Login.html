@@ -1,165 +1,210 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
+
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <title>Login Form | CodingLab</title> -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: black;
+}
+::selection{
+  background : red;
+}
+.container{
+  max-width: 600px;
+  padding: 25px 30px;
+  margin: 70px auto;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: white;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: red;
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background : red;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: red;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: red;
+  border: 1px solid black;
+  
+}
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-		/>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-				font-family: 'Poppins', sans-serif;
-			}
-			body {
-				background: black;
-				overflow: hidden;
-			}
-			::selection {
-				background: red;
-			}
-			.container {
-				max-width: 700px;
-				padding: 25px 30px;
-				margin: 170px auto;
-			}
-			.wrapper {
-				width: 100%;
-				background: #fff;
-				border-radius: 5px;
-				box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
-			}
-			.wrapper .title {
-				height: 90px;
-				background: white;
-				border-radius: 5px 5px 0 0;
-				color: #fff;
-				font-size: 30px;
-				font-weight: 600;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			.wrapper form {
-				padding: 30px 25px 25px 25px;
-			}
-			.wrapper form .row {
-				height: 45px;
-				margin-bottom: 15px;
-				position: relative;
-			}
-			.wrapper form .row input {
-				height: 100%;
-				width: 100%;
-				outline: none;
-				padding-left: 60px;
-				border-radius: 5px;
-				border: 1px solid lightgrey;
-				font-size: 16px;
-				transition: all 0.3s ease;
-			}
-			form .row input:focus {
-				border-color: red;
-			}
-			form .row input::placeholder {
-				color: #999;
-			}
-			.wrapper form .row i {
-				position: absolute;
-				width: 47px;
-				height: 100%;
-				color: #fff;
-				font-size: 18px;
-				background: red;
-				border: 1px solid black;
-				border-radius: 5px 0 0 5px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			.wrapper form .pass {
-				margin: -8px 0 20px 0;
-			}
-			.wrapper form .pass a {
-				color: red;
-				font-size: 17px;
-				text-decoration: none;
-			}
-			.wrapper form .pass a:hover {
-				text-decoration: underline;
-			}
-			.wrapper form .button input {
-				color: #fff;
-				font-size: 20px;
-				font-weight: 500;
-				padding-left: 0px;
-				background: red;
-				border: 1px solid black;
-			}
-			.wrapper form .signup-link {
-				text-align: center;
-				margin-top: 20px;
-				font-size: 17px;
-			}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
 
-			form .signup-link a:hover {
-				text-decoration: underline;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="wrapper">
-				<div class="title">
-					<span style="color: black">Login Form</span>
-				</div>
 
-				<form action="#">
-					<div class="row">
-						<i class="fas fa-user"></i>
-						<input
-							type="text"
-							placeholder="Email or Phone"
-							required
-						/>
-					</div>
-					<div class="row">
-						<i class="fas fa-lock"></i>
-						<input
-							type="password"
-							placeholder="Password"
-							required
-						/>
-					</div>
-					<div class="pass">
-						<a href="#"
-							><span style="color: black"
-								>Forgot password?</span
-							></a
-						>
-					</div>
-					<div class="row button" onclick="abc()">
-						<input type="submit" value="Login" />
-					</div>
-					<div class="signup-link">
-						Not a member? <a href="#">Signup now</a>
-					</div>
-				</form>
-			</div>
-		</div>
+     </style>
 
-		<script>
-			function abc() {
-				document.body.innerHTML = 'You have logged in successfully.';
-				document.body.style.color = 'white';
-			}
-		</script>
-	</body>
+  </head>
+  <body>
+    <!-- navbar  -->
+		<nav class="navbar" id="navbar">
+			<div class="logo"><span>Gym</span> Website</div>
+			<div class="toggle_menu" id="toggle"></div>
+			<ul class="navlist" id="navlist">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="Register.html">Register</a></li>
+				<li><a href="Login.html">Login</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+
+    <!-- form -->
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span style="color : black">Login Form</span></div>
+        
+        <form action="#">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email or Phone" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="pass" ><a href="#"><span style="color : black">Forgot password?</span></a></div>
+          <div class="row button" onclick="abc()">
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- footer -->
+<footer style="margin-top: 30px;">
+  <div class="flex-container">
+
+    <!-- 1st room -->
+    <div >
+      <p style="padding-bottom: 20px;">
+        <span style= "color: red; font-weight: 700; font-size: 25px;">GYM</span> 
+        <span style= "font-weight: 700; font-size: 25px;">WEBSITE</span>
+      </p>
+
+      <ul>
+        <li><a href="index.html" class="linkbottom">HOME</a></li>
+        <li><a href="about.html" class="linkbottom">ABOUT US</a></li>
+        <li><a href="gallery" class="linkbottom">GALLERY</a></li>
+        <li><a href="Register.html" class="linkbottom">REGISTER</a></li>
+    <li><a href="Login.html" class="linkbottom">LOGIN</a></li>
+        <li><a href="contact.html" class="linkbottom">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    <!-- 2nd room -->
+    <div >
+      <p>
+        <h2 style="padding-bottom: 10px;">Contact us</h2>
+        <p>xyz<br>xyz</p>    
+      </p>
+    </div>
+
+    <!-- 3rd room -->
+    <div >
+      <p>
+       <h2 style="padding-bottom: 10px;">Follow us</h2>
+       <img src="icons/instagram-modified.png" alt="instagram" style="width: 50px; height: 50px;">
+       <img src="icons/twitter-modified.png" alt="twitter" style="width: 50px; height: 50px;">
+       <img src="icons/facebook-modified.png" alt="facebook" style="width: 50px; height: 50px;">
+      </p>
+
+    </div>  
+
+  </div>
+</footer>
+    
+
+    <script>
+        function abc()
+        {  
+            document.body.innerHTML="You have logged in successfully.";
+            document.body.style.color= "white";
+           
+        }
+    </script>
+
+  </body>
 </html>
