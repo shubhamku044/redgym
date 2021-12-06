@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="contact.css">
+   </head>
+<body>
+
+  <!-- navbar  -->
+  <nav class="navbar" id="navbar">
+    <div class="logo"><span>Gym</span> Website</div>
+    <div class="toggle_menu" id="toggle"></div>
+    <ul class="navlist" id="navlist">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/gallery/gallery.html">Gallery</a></li>
+      <li><a href="/Register/Register.html">Register</a></li>
+      <li><a href="/login/Login.html">Login</a></li>
+      <li><a href="/contact/contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">xyz</div>
+          <div class="text-two">xyz</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">0000</div>
+          
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">xyz@gmail.com</div>
+          
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Contact us</div>
+        
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+            <input type="text" placeholder="Enter your message">
+        </div>
+        <div class="button" onclick="abcd()">
+          <input type="button" value="Send Email" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer style="margin-top: 30px;">
+    <div class="flex-container">
+
+      <!-- 1st room -->
+      <div >
+        <p style="padding-bottom: 0px;">
+          <span style= "color: red; font-weight: 700; font-size: 25px;">GYM</span> 
+          <span style= "font-weight: 700; font-size: 25px;">WEBSITE</span>
+        </p>
+
+        <ul>
+          <li><a href="index.html" class="linkbottom">HOME</a></li>
+          <li><a href="about.html" class="linkbottom">ABOUT US</a></li>
+          <li><a href="gallery.html" class="linkbottom">GALLERY</a></li>
+          <li><a href="Register.html" class="linkbottom">REGISTER</a></li>
+          <li><a href="Login.html" class="linkbottom">LOGIN</a></li>
+          <li><a href="contact.html" class="linkbottom">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <!-- 2nd room -->
+      <div >
+        <p>
+          <h2 style="padding-bottom: 10px; padding-right: 10px;">Contact us</h2>
+          <p>xyz<br>xyz</p>    
+        </p>
+      </div>
+
+      <!-- 3rd room -->
+      <div >
+        <p>
+         <h2 style="padding-bottom: 10px;">Follow us</h2>
+         <img src="/icons/instagram-modified.png" alt="instagram" style="width: 50px; height: 50px;">
+         <img src="/icons/twitter-modified.png" alt="twitter" style="width: 50px; height: 50px;">
+         <img src="/icons/facebook-modified.png" alt="facebook" style="width: 50px; height: 50px;">
+        </p>
+
+      </div>  
+
+    </div>
+  </footer>
+
+  <script>
+    function abcd()
+    {  
+        document.body.innerHTML="We got your message. We will contact you shortly.";
+        document.body.style.color= "white";
+       
+    }
+</script>
+</body>
+</html>
